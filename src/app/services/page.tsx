@@ -1,6 +1,12 @@
-import ServiceStyle from "./services.module.css"
-export default function service(){
-    return(<div><h1 className= {ServiceStyle.h1}>This is my Services Page </h1>
-
-    </div>
+import Link from "next/link";
+import servicesStyle from"./services.module.css";
+export default function Contact(){
+    return(<main>
+    <h1 className={servicesStyle.h1}>My Services are as Under:</h1>
+   <li> <Link href="/web">Website Development</Link>
+   </li>
+   <li>
+    <Link href="/App-Dev">Application Development</Link>  
+    </li>
+    </main>
 )}
